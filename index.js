@@ -7,6 +7,7 @@ import DotEnv from 'dotenv';
 
 
 const app = express();
+
 DotEnv.config();
 
 app.use(bodyParser.json({extended: true }));
