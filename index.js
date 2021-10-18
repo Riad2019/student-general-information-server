@@ -15,6 +15,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use('/users',route);
 
+app.get('/',(req, res) => {
+    res.send("hello from db it's working");
+})
+
 const PORT = process.env.PORT || 8000;
 
 const URL ='mongodb+srv://studentInformation:DCSD1835!@cluster0.vtemd.mongodb.net/studentGeneralInformation?retryWrites=true&w=majority'
